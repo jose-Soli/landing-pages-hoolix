@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Practice</title>
+
+    <!-- 
+        # Favicon
+    -->
+    <link rel="shortcut icon" href="./assets/svg/favicon.svg" type="image/svg+xml">
+
+    <!-- 
+        #Preload
+    -->
+    <link rel="preload" as="image" href="./assets/img/hero-banner.png">
+
+    <!-- 
+        Custom style
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="home">
+    <!-- 
+        # Header
+    -->
+    <header class="header" data-header>
+        <div class="container header__container">
+            <a href="#" class="header__logo">Hoolix</a>
+
+            <nav class="navbar" data-navbar>
+                <div class="wrapper">
+                    <a href="#" class="header__logo header__logo--color">Hoolix</a>
+
+                    <button class="btn__close" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar__list">
+                    <li><a href="#home" class="navbar__link" data-nav-link>Home</a></li>
+                    <li><a href="#about" class="navbar__link" data-nav-link>About</a></li>
+                    <li><a href="#service" class="navbar__link" data-nav-link>Service</a></li>
+                    <li><a href="#feature" class="navbar__link" data-nav-link>Features</a></li>
+                    <li><a href="#blog" class="navbar__link" data-nav-link>Blog</a></li>
+                    <li><a href="#contact" class="navbar__link" data-nav-link>Contact us</a></li>
+                </ul>
+            </nav>
+
+            <button class="open__btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn__outline">Lets talk</a>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+
+            <!-- 
+                #Hero
+            ¡-->
+            <section class="section hero" id="hero" arial-labe="hero">
+                <div class="container hero__container">
+                    <div class="hero__content">
+                        <p class="hero__subtitle has__before">Wellcome to Our Agency</p>
+                        <h1 class="h1 hero__title">Smart Ideas for your Brand are Here</h1>
+                        <p class="hero__text">
+                            Donec tincidunt lacinia diam, eu volutpat est sollicitudin at. Vestibulum ut mi tristi que,
+                            vulputate ante quis, tempus enim. Proin quis euismod purus. Suspen disse efficitur
+                            aliquam enim sed consequat vulputate ante quis.</p>
+
+                        <div class="btn__group">
+                            <a href="#" class="btn btn__primary">Discover More</a>
+
+                            <button class="flex__btn">
+                                <div class="btn__icon">
+                                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <span class="hero__span">How it works</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <figure class="hero__banner has__before img__holder" style="--width:650; --height:650;">
+                        <img src="./assets/img/hero-banner.png" alt="hero banner" width="650" height="650"
+                            class="img__cover">
+                    </figure>
+                </div>
+            </section>
+
+            <!-- 
+                #About
+            -->
+            <section class="section about" id="about" arial-label="about">
+                <div class="container about__container">
+                    <figure class="about__banner">
+                        <img src="./assets/img/about-banner.png"  loading="lazy" class="w-100"
+                            loading="lazy">
+                    </figure>
+
+                    <div class="about__content">
+                        <h2 class="h2 h2-sm section__subtitle">
+                            We create some things, Design for your success future.
+                        </h2>
+                        <p class="section__text">
+                            orem Ipsum is simply dumm of free available in market the way printing and typesetting
+                            industry has been the industrys standard dummy text ever.
+                        </p>
+
+                        <ul class="about__list">
+                            <li class="has__before about__before--font">
+                                Price of additional materials or parts (if needed)
+                            </li>
+
+                            <li class="has__before about__before--font">
+                                Transportation cost for carrying new materials/parts
+                            </li>
+
+                            <li class="has__before about__before--font">
+                                You will get 100% money back offer.
+                            </li>
+                        </ul>
+
+                        <div class="btn__group btn__group--about">
+                            <a href="#" class="btn btn__primary">Know More</a>
+
+                            <button class="flex__btn flex__btn--obout">
+                                <div class="btn__icon--about">
+                                    <ion-icon name="medal-outline" aria-hidden="true" class="about__icon"></ion-icon>
+                                </div>
+
+                                <span class="hero__span about__span">10+ Years Experience</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+                #Service
+            -->
+            <section class="section service" id="service" arial-label="service">
+                <div class="container container__service">
+                    <p class="text__center section__sutitle">-What We Offer-</p>
+
+                    <h2 class="h2 section__title text__center">Our Creative Services</h2>
+
+                    <p class="section__text text__center">
+                        Get the most of reduction in your team’s operating costs for the whole product which creates
+                        amazing UI/UX experiences.
+                    </p>
+
+                    <ul class="grid__list grid__list--services">
+                        <li>
+                            <div class="service__card has__after">
+                                <figure class="card__icon">
+                                    <img src="./assets/img/service-1.png" alt="UI/UX Creative Design"
+                                        class="service__img" width="140" height="140" loading="lazy">
+                                </figure>
+
+                                <div class="card__content">
+                                    <h3 class="h3 card__title">UI/UX Creative Design</h3>
+
+                                    <p class="card__text">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget
+                                        luctlie gula and adipiscing elit.
+                                    </p>
+
+                                    <a href="#" class="btn__link">
+                                        <span class="service__span">Read More</span>
+
+                                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service__card has__after">
+                                <figure class="card__icon">
+                                    <img src="./assets/img/service-2.png" alt="App Development" class="service__img"
+                                        width="140" height="140" loading="lazy">
+                                </figure>
+
+                                <div class="card__content">
+                                    <h3 class="h3 card__title">App Development</h3>
+
+                                    <p class="card__text">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget
+                                        luctlie gula and adipiscing elit.
+                                    </p>
+
+                                    <a href="#" class="btn__link">
+                                        <span class="service__span">Read More</span>
+
+                                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service__card has__after">
+                                <figure class="card__icon">
+                                    <img src="./assets/img/service-3.png" alt="Professional Content Writer"
+                                        class="service__img" width="140" height="140" loading="lazy">
+                                </figure>
+
+                                <div class="card__content">
+                                    <h3 class="h3 card__title">Professional Content Writer</h3>
+
+                                    <p class="card__text">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget
+                                        luctlie gula and adipiscing elit.
+                                    </p>
+
+                                    <a href="#" class="btn__link">
+                                        <span class="service__span">Read More</span>
+
+                                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service__card has__after">
+                                <figure class="card__icon">
+                                    <img src="./assets/img/service-3.png" alt="Graphic Design" class="service__img"
+                                        width="140" height="140" loading="lazy">
+                                </figure>
+
+                                <div class="card__content">
+                                    <h3 class="h3 card__title">Graphic Design</h3>
+
+                                    <p class="card__text">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget
+                                        luctlie gula and adipiscing elit.
+                                    </p>
+
+                                    <a href="#" class="btn__link">
+                                        <span class="service__span">Read More</span>
+
+                                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="" class="btn btn__primary btn__center">Get Started</a>
+                </div>
+            </section>
+
+            <!-- 
+                #Feature
+            -->
+            <section class="section feature" id="feature" data-label="feature">
+                <div class="container feature__container">
+                    <p class="section__sutitle text__center">
+                        -Why Choose Us-
+                    </p>
+
+                    <h2 class="h2 text__center">Reasons to Choose Us</h2>
+
+                    <p class="section__text text__center">
+                        Get the most of reduction in your team’s operating costs for the whole product which creates
+                        amazing UI/UX experiences.
+                    </p>
+
+                    <ul class="grid__list grid__list--features">
+                        <li>
+                            <div class="feature__card">
+
+                                <data class="data__number" value="01">01</data>
+
+                                <h3 class="h3 card__title">Free IconPlugin</h3>
+
+                                <p class="card__text">
+                                    Nullam ullamcorper condimentum urna eu accumsan.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature__card">
+
+                                <data class="data__number" value="02">02</data>
+
+                                <h3 class="h3 card__title">Free 6 Month Support</h3>
+
+                                <p class="card__text">
+                                    Nullam ullamcorper condimentum urna eu accumsan.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature__card">
+
+                                <data class="data__number" value="03">03</data>
+
+                                <h3 class="h3 card__title">Customer Strategy</h3>
+
+                                <p class="card__text">
+                                    Nullam ullamcorper condimentum urna eu accumsan.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature__card">
+
+                                <data class="data__number" value="04">04</data>
+
+                                <h3 class="h3 card__title">Best Premimum Image</h3>
+
+                                <p class="card__text">
+                                    Nullam ullamcorper condimentum urna eu accumsan.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature__card">
+
+                                <data class="data__number" value="05">05</data>
+
+                                <h3 class="h3 card__title">Most Advanced Features</h3>
+
+                                <p class="card__text">
+                                    Nullam ullamcorper condimentum urna eu accumsan.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature__card">
+
+                                <data class="data__number" value="06">06</data>
+
+                                <h3 class="h3 card__title">Very Reasonable Price</h3>
+
+                                <p class="card__text">
+                                    Nullam ullamcorper condimentum urna eu accumsan.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 
+                #Faq
+            -->
+            <section class="section faq" arial-label="frequently asked questions">
+                <div class="container faq__container">
+                    <div class="title__wrapper">
+                        <h2 class="h2 section__title faq__title">
+                            Discover Frequently Asked Questions?
+                        </h2>
+
+                        <a href="" class="btn btn__primary">Work Together</a>
+                    </div>
+
+                    <ul class="grid__list">
+                        <li>
+                            <div class="faq__card">
+                                <button class="card__action" data-accordion-action>
+
+                                    <h3 class="h3 card__title">
+                                        01. Curious about how to build your own UX strategy? Here are five simple
+                                        steps.
+                                    </h3>
+
+                                    <div class="action__icon">
+                                        <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                                        <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="card__text--faq">
+                                    <p class="faq__text">
+                                        Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed
+                                        varius, diam vitae posuere semper, libero ex hendrerit nunc, ac sagittis
+                                        eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit amet
+                                        condimentum erat. Pellentesque ultrices sagittis turpis, quis tempus ante
+                                        viverra et.Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="faq__card">
+                                <button class="card__action" data-accordion-action>
+
+                                    <h3 class="h3 card__title">
+                                        02. Where Could a Career in UX Take You? Agency vs. In-House vs. Freelance?
+                                    </h3>
+
+                                    <div class="action__icon">
+                                        <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                                        <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="card__text--faq">
+                                    <p class="faq__text">
+                                        Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed
+                                        varius, diam vitae posuere semper, libero ex hendrerit nunc, ac sagittis
+                                        eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit amet
+                                        condimentum erat. Pellentesque ultrices sagittis turpis, quis tempus ante
+                                        viverra et.Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="faq__card">
+                                <button class="card__action" data-accordion-action>
+
+                                    <h3 class="h3 card__title">
+                                        03. What Is a Problem Statement in UX? (And How To Write One?
+                                    </h3>
+
+                                    <div class="action__icon">
+                                        <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                                        <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="card__text--faq">
+                                    <p class="faq__text">
+                                        Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed
+                                        varius, diam vitae posuere semper, libero ex hendrerit nunc, ac sagittis
+                                        eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit amet
+                                        condimentum erat. Pellentesque ultrices sagittis turpis, quis tempus ante
+                                        viverra et.Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="faq__card">
+                                <button class="card__action" data-accordion-action>
+
+                                    <h3 class="h3 card__title">
+                                        04. There are several techniques UX designers employ to arrive at a
+                                        succinct?
+                                    </h3>
+
+                                    <div class="action__icon">
+                                        <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                                        <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="card__text--faq">
+                                    <p class="faq__text">
+                                        Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed
+                                        varius, diam vitae posuere semper, libero ex hendrerit nunc, ac sagittis
+                                        eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit amet
+                                        condimentum erat. Pellentesque ultrices sagittis turpis, quis tempus ante
+                                        viverra et.Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="faq__card">
+                                <button class="card__action" data-accordion-action>
+
+                                    <h3 class="h3 card__title">
+                                        05. What are the obstacles users are facing? What are they trying to do?
+                                    </h3>
+
+                                    <div class="action__icon">
+                                        <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                                        <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="card__text--faq">
+                                    <p class="faq__text">
+                                        Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed
+                                        varius, diam vitae posuere semper, libero ex hendrerit nunc, ac sagittis
+                                        eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit amet
+                                        condimentum erat. Pellentesque ultrices sagittis turpis, quis tempus ante
+                                        viverra et.Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar
+                                        imperdiet. Sed varius, diam vitae posuere semper.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+    <!-- 
+        #Footer
+    -->
+    <footer class="footer">
+        <div class="footer__top section">
+            <div class="container container__footer--top">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">Hoolix</a>
+
+                    <p class="footer__text">
+                        Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+
+                    <form action="#" class="newsletter__form">
+                        <input type="email" name="email" class="email__field" placeholder="Enter your email" required>
+
+                        <button type="submit" class="form__btn">
+                            <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+                        </button>
+                    </form>
+                </div>
+
+                <ul class="footer__list">
+                    <li>
+                        <p class="footer__list--title">Our Services</p>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Strategy & Research</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Web Development</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Web Solution</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Digital Merketing</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">App Design</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">App Development</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li>
+                        <p class="footer__list--title">Company</p>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">About Company</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Our Services</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Our Portfolio</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Our Blog</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Latest News</a>
+                    </li>
+
+                    <li class="footer__link">
+                        <a href="#" class="footer__links">Contact Us</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li>
+                        <p class="footer__list--title">Contact Us</p>
+                    </li>
+
+                    <li class="footer__item">
+                        <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+                        <address class="contact__link address">
+                            4517 Washington Ave. Manchester, Kentucky 39495
+                        </address>
+                    </li>
+
+                    <li class="footer__item">
+                        <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+                        <a href="tel:+7894631546876" class="contact__link">
+                            +7894631546876
+                        </a>
+                    </li>
+
+                    <li class="footer__item">
+                        <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+                        <a href="mailto:joseestudios456@gmail.com" class="contact__link">
+                            joseestudios456@gmail.com
+                        </a>
+                    </li>
+
+                    <li class="footer__item">
+                        <ul class="social__media">
+                            <li>
+                                <a href="#" class="social__link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social__link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social__link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social__link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <footer class="footer__bottom">
+            <div class="container container__footer--botton">
+                <p class="copyright">
+                    &copy; 2022 Hoolix | All Rights Reserved by SoliTerrero
+                    <a href="#" class="copyright__link">SoliTerrero</a>
+                </p>
+
+                <ul class="footer__bottom--list">
+                    <li>
+                        <a href="#" class="footer__bottom--links">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer__bottom--links">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </footer>
+
+    <!-- 
+        # Ion-icon
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- 
+        # Custon Js
+    -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
